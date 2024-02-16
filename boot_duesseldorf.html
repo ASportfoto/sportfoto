@@ -9,6 +9,17 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+
+    $(function() {
+            $('.pop').on('click', function() {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');
+            });
+    });
+  </script>
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
 
@@ -55,21 +66,37 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-          <h2>boot Düsseldorf – Die weltgrößte Wassersportmesse</h2>
+          <h2>boot Düsseldorf – Die weltgrößte Wassersportmesse (20.01.–28.01.2024)</h2>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <section id="portfolio" class="portfolio">
       <div class="container">
+
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" data-dismiss="modal">
+            <div class="modal-content"  >
+              <div class="modal-body">
+                <img src="" class="imagepreview" style="width: 100%;" >
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-veranstaltung" data-toggle="modal" data-target="#exampleModal">
+            <div class="portfolio-wrap pop">
+              <img src="assets/img/Fotos/Veranstaltungen/american_ice_football/foto_0.jpg" class="img-fluid" alt="" height="500" width="500">
+            </div>
+          </div>
+
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap pop">
               <img src="assets/img/Fotos/Veranstaltungen/bootsmesse_duesseldorf/foto_0.jpg" class="img-fluid" alt="" height="500" width="500">
               <!--
               <div class="portfolio-info">
@@ -84,25 +111,25 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap pop">
               <img src="assets/img/Fotos/Veranstaltungen/bootsmesse_duesseldorf/foto_1.jpg" class="img-fluid" alt="" height="500" width="500">
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap pop">
               <img src="assets/img/Fotos/Veranstaltungen/bootsmesse_duesseldorf/foto_2.jpg" class="img-fluid" alt="" height="500" width="500">
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap pop">
               <img src="assets/img/Fotos/Veranstaltungen/bootsmesse_duesseldorf/foto_3.jpg" class="img-fluid" alt="" height="500" width="500">
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
+            <div class="portfolio-wrap pop">
               <img src="assets/img/Fotos/Veranstaltungen/bootsmesse_duesseldorf/foto_4.jpg" class="img-fluid" alt="" height="500" width="500">
             </div>
           </div>
