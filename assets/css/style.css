@@ -1546,3 +1546,16 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+
+.watermark {
+    color: #ffc451;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    font-weight: bold;
+}
+
+img {
+    pointer-events: none;
+}
